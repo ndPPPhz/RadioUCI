@@ -1,0 +1,11 @@
+xcuserdata
+.DS_Store
+*.ipa
+*.xcarchive
+*.xctimeline
+.dropbox
+*.xcscmblueprint
+.xcarchive
+.ipa
+xcshareddata
+*.xcworkspacedata
