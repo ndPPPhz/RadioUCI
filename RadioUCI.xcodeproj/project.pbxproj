@@ -18,6 +18,7 @@
 		6E7C4D77262345350038B26E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7C4D76262345350038B26E /* Coordinator.swift */; };
 		6E7C4D7C26234A760038B26E /* TransitioningManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7C4D7B26234A760038B26E /* TransitioningManager.swift */; };
 		6E7C4D8026237FEF0038B26E /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7C4D7F26237FEF0038B26E /* UIStoryboard+Ext.swift */; };
+		6E7C4D8A2623ABB00038B26E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E7C4D892623ABB00038B26E /* Settings.bundle */; };
 		EF11ACCD21CFB881001AD105 /* ShareSheetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11ACCC21CFB881001AD105 /* ShareSheetTableViewController.swift */; };
 		EF11ACCF21CFCA26001AD105 /* ShareSheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11ACCE21CFCA26001AD105 /* ShareSheetTableViewCell.swift */; };
 		EF11ACD121CFCABE001AD105 /* ShareOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11ACD021CFCABE001AD105 /* ShareOption.swift */; };
@@ -45,6 +46,7 @@
 		6E7C4D76262345350038B26E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		6E7C4D7B26234A760038B26E /* TransitioningManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitioningManager.swift; sourceTree = "<group>"; };
 		6E7C4D7F26237FEF0038B26E /* UIStoryboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Ext.swift"; sourceTree = "<group>"; };
+		6E7C4D892623ABB00038B26E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		EF11ACCC21CFB881001AD105 /* ShareSheetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetTableViewController.swift; sourceTree = "<group>"; };
 		EF11ACCE21CFCA26001AD105 /* ShareSheetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetTableViewCell.swift; sourceTree = "<group>"; };
 		EF11ACD021CFCABE001AD105 /* ShareOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareOption.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				EF718A3C205B0741007B6678 /* LaunchScreen.storyboard */,
 				EF718A3A205B0741007B6678 /* Assets.xcassets */,
 				EF718A3F205B0741007B6678 /* Info.plist */,
+				6E7C4D892623ABB00038B26E /* Settings.bundle */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				EF718A2C205B0741007B6678 /* Sources */,
 				EF718A2D205B0741007B6678 /* Frameworks */,
 				EF718A2E205B0741007B6678 /* Resources */,
+				6E7C4D852623A6940038B26E /* Update build version */,
 			);
 			buildRules = (
 			);
@@ -270,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7C4D8A2623ABB00038B26E /* Settings.bundle in Resources */,
 				EF718A4A205B0763007B6678 /* Main.storyboard in Resources */,
 				EF718A3E205B0741007B6678 /* LaunchScreen.storyboard in Resources */,
 				EF718A3B205B0741007B6678 /* Assets.xcassets in Resources */,
@@ -277,6 +282,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E7C4D852623A6940038B26E /* Update build version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Update build version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh $SRCROOT/update_build_version.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF718A2C205B0741007B6678 /* Sources */ = {
