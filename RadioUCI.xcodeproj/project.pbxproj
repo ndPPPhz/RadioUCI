@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E06EFF62645CBF60023DC4B /* CompletionWithResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E06EFF52645CBF60023DC4B /* CompletionWithResult.swift */; };
 		6E48781A2620E7AD009B9BCD /* ViewDataConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4878192620E7AD009B9BCD /* ViewDataConfigurable.swift */; };
 		6E48781D2620E96E009B9BCD /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E48781C2620E96E009B9BCD /* PlayerViewModel.swift */; };
 		6E4878222620FB54009B9BCD /* CurrentSongFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4878212620FB54009B9BCD /* CurrentSongFetcher.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E06EFF52645CBF60023DC4B /* CompletionWithResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionWithResult.swift; sourceTree = "<group>"; };
 		6E4878192620E7AD009B9BCD /* ViewDataConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDataConfigurable.swift; sourceTree = "<group>"; };
 		6E48781C2620E96E009B9BCD /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		6E4878212620FB54009B9BCD /* CurrentSongFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSongFetcher.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				6E4878192620E7AD009B9BCD /* ViewDataConfigurable.swift */,
+				6E06EFF52645CBF60023DC4B /* CompletionWithResult.swift */,
 				6E51B5762621B35000940BED /* URLOpenerHandler.swift */,
 				EFC12EBC21CFAFBC00B9D594 /* String+Ext.swift */,
 				6E51B56E2621B18900940BED /* Array+Ext.swift */,
@@ -319,6 +322,7 @@
 				6E7C4D77262345350038B26E /* Coordinator.swift in Sources */,
 				6E48781A2620E7AD009B9BCD /* ViewDataConfigurable.swift in Sources */,
 				6E7C4D742623451C0038B26E /* MainCoordinator.swift in Sources */,
+				6E06EFF62645CBF60023DC4B /* CompletionWithResult.swift in Sources */,
 				EF11ACCD21CFB881001AD105 /* ShareSheetTableViewController.swift in Sources */,
 				6E51B56F2621B18900940BED /* Array+Ext.swift in Sources */,
 				EF11AD0321D141C7001AD105 /* AnimationController.swift in Sources */,

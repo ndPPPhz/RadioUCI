@@ -9,7 +9,7 @@
 import Foundation
 
 protocol CurrentSongFetcherInterface {
-	func fetchCurrentSong(completion: @escaping (Result<String, Error>) -> Void)
+	func fetchCurrentSong(completion: @escaping CompletionWithResult<String>)
 	func set(radioServerURLString: String, fetchingInterval: Double)
 }
 
@@ -53,7 +53,7 @@ final class CurrentSongFetcher: CurrentSongFetcherInterface {
 		self.fetchingInterval = fetchingInterval
 	}
 
-	func fetchCurrentSong(completion: @escaping (Result<String, Error>) -> Void) {
+	func fetchCurrentSong(completion: @escaping CompletionWithResult<String>) {
 		guard
 			let fetchingInterval = fetchingInterval,
 			let radioServerURLString = radioServerURLString
@@ -66,7 +66,7 @@ final class CurrentSongFetcher: CurrentSongFetcherInterface {
 				return
 			}
 
-			let completionBlock: (Result<String, Error>) -> Void = { result in
+			let completionBlock: CompletionWithResult<String> = { result in
 				DispatchQueue.main.async {
 					completion(result)
 				}

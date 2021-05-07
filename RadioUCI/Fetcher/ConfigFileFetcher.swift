@@ -9,7 +9,7 @@
 import Foundation
 
 protocol ConfigFileFetcherInterface {
-	func fetchConfig(url: URL, completion: @escaping (Result<ConfigFile, Error>) -> Void)
+	func fetchConfig(url: URL, completion: @escaping CompletionWithResult<ConfigFile>)
 }
 
 final class ConfigFileFetcher: ConfigFileFetcherInterface {
@@ -26,13 +26,13 @@ final class ConfigFileFetcher: ConfigFileFetcherInterface {
 		self.session = session
 	}
 
-	func fetchConfig(url: URL, completion: @escaping (Result<ConfigFile, Error>) -> Void) {
+	func fetchConfig(url: URL, completion: @escaping CompletionWithResult<ConfigFile>) {
 		session.dataTask(with: url) { [weak self] (data, _, error) in
 			guard let _self = self else {
 				return
 			}
 
-			let completionBlock: ((Result<ConfigFile, Error>) -> Void) = { result in
+			let completionBlock: (CompletionWithResult<ConfigFile>) = { result in
 				DispatchQueue.main.async {
 					completion(result)
 				}
