@@ -2,7 +2,7 @@
 
 # RadioUCI ![](https://img.shields.io/badge/iOS-Swift-green)
 
-`RadioUCI` the official radio app of the "<a href="https://www.uci.it/">Unione Coltivatori Italiani</a>".
+<a href="https://www.uci.it/">Radio UCI</a> official radio app source code. .
 
 ## Preview
 
