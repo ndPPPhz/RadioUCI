@@ -68,6 +68,9 @@ final class ShareSheetTableViewController: UITableViewController {
 
 private extension ShareOption {
 	var asShareViewData: ShareSheetTableViewCell.ViewData {
-		return .init(logoImage: UIImage(named: image)!, contentString: name)
+		return .init(
+			logoImage: UIImage(named: image) ?? UIImage.init(named: "LogoRadioUCI")!,
+			contentString: name
+		)
 	}
 }

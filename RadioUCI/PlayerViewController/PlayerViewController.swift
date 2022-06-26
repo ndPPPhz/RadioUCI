@@ -29,7 +29,7 @@ final class PlayerViewController: UIViewController {
 	private let nowPlayingInfoCenter = MPNowPlayingInfoCenter.default()
 
 	private var playerController: AVPlayer?
-	private var configFile: ConfigFile?
+	private var configFile: Configuration?
 	weak var radioUCICoordinator: RadioUCICoordinatorInterface?
 
 	private lazy var playerViewModel: PlayerViewModelInterface = {
@@ -152,7 +152,7 @@ extension PlayerViewController: PlayerViewModelDelegate {
 			// show spinnign indicator
 			return
 		case .loaded(let configFile):
-			guard let streamURL = URL(string: configFile.streamURL) else {
+			guard let streamURL = URL(string: configFile.radioURL) else {
 				// Show error popup
 				return
 			}

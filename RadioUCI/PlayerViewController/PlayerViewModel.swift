@@ -26,7 +26,7 @@ final class PlayerViewModel: PlayerViewModelInterface {
 	enum InitialisationState {
 		case initial
 		case loading
-		case loaded(ConfigFile)
+		case loaded(Configuration)
 	}
 
 	enum PlayerState {
@@ -63,7 +63,7 @@ final class PlayerViewModel: PlayerViewModelInterface {
 	init(
 		currentSongFetcher: CurrentSongFetcherInterface = CurrentSongFetcher(),
 		configFileFetcher: ConfigFileFetcherInterface = ConfigFileFetcher(),
-		configFileURL: URL = URL(string: "https://annino.dev/radiouciConfig.json")!
+		configFileURL: URL = URL(string: "https://annino.dev/radiouciConfigV2.json")!
 	) {
 		self.currentSongFetcher = currentSongFetcher
 		self.configFileFetcher = configFileFetcher
